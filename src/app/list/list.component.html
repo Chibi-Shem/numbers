@@ -1,0 +1,6 @@
+<table>
+    <tr *ngFor="let number of numbers">
+        <td>{{number.value}}</td>
+    </tr>
+</table>
+<button *ngIf="prevPage" (click)="getList(prevPage)">PREV</button><button *ngIf="nextPage" (click)="getList(nextPage)">NEXT</button>
